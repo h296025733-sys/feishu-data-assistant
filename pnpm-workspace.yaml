@@ -1,0 +1,17 @@
+packages:
+  - apps/*
+
+allowBuilds:
+  '@lark-opdev/cli': true
+  core-js: true
+  esbuild: true
+  keytar: false
+  protobufjs: true
+minimumReleaseAgeExclude:
+  - '@types/node@26.1.2'
+  - webpack@5.109.1
+onlyBuiltDependencies:
+  - '@lark-opdev/cli'
+  - core-js
+  - esbuild
+  - protobufjs

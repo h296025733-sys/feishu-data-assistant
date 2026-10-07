@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "templateMode": false,
+  "businessDisplayName": "示例店铺",
+  "businessTimeZone": "Asia/Shanghai",
+  "storeAggregateLabel": "店铺汇总",
+  "cooperationDateField": "登记日期",
+  "tables": {
+    "development": "红人开发表",
+    "cooperation": "红人合作表",
+    "online": "红人上线表",
+    "roi": "投产比"
+  },
+  "tiktok": {
+    "shopAlias": "Storefour",
+    "shopTimeZone": "America/Los_Angeles",
+    "currencyCode": "USD",
+    "productMapFile": "config/tiktok-product-map.template.json",
+    "autoEnrollNewProducts": false
+  },
+  "dailyAutomation": {
+    "enabled": false,
+    "localTime": "09:00",
+    "integrationStartDate": "2026-01-01",
+    "reconciliationDays": 3,
+    "probeDays": 7,
+    "runOnStartup": false
+  },
+  "accountSideAutomation": {
+    "enabled": false
+  },
+  "productSpikeMonitor": {
+    "enabled": false
+  }
+}

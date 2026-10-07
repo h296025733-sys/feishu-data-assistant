@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "defaultTenantId": "store-a",
+  "globalQueryConcurrency": 8,
+  "privateAccess": {
+    "enabled": true,
+    "userIdsEnv": "BOT_PRIVATE_USER_IDS"
+  },
+  "tenants": [
+    {
+      "id": "store-a",
+      "enabled": true,
+      "profileFile": "config/tenants/store-a.profile.json",
+      "routing": {
+        "groupChatIds": [],
+        "allowPrivateFallback": false,
+        "allowUnboundGroupFallback": false
+      },
+      "base": {
+        "appTokenEnv": "STORE_A_FEISHU_BITABLE_APP_TOKEN",
+        "tableIdEnv": "STORE_A_FEISHU_BITABLE_TABLE_ID",
+        "baseUrlEnv": "STORE_A_FEISHU_BITABLE_URL"
+      },
+      "ai": {
+        "apiKeyEnv": "DEEPSEEK_API_KEY",
+        "baseUrlEnv": "DEEPSEEK_BASE_URL",
+        "modelEnv": "DEEPSEEK_MODEL"
+      },
+      "access": {
+        "groupMembersEqual": true,
+        "scheduleAdminUserIdsEnv": "BOT_ADMIN_USER_IDS"
+      },
+      "queryConcurrency": 3
+    },
+    {
+      "id": "store-b",
+      "enabled": true,
+      "profileFile": "config/tenants/store-b.profile.json",
+      "routing": {
+        "groupChatIds": [],
+        "allowPrivateFallback": false,
+        "allowUnboundGroupFallback": false
+      },
+      "base": {
+        "appTokenEnv": "STORE_B_FEISHU_BITABLE_APP_TOKEN",
+        "tableIdEnv": "STORE_B_FEISHU_BITABLE_TABLE_ID",
+        "baseUrlEnv": "STORE_B_FEISHU_BITABLE_URL"
+      },
+      "ai": {
+        "apiKeyEnv": "DEEPSEEK_API_KEY",
+        "baseUrlEnv": "DEEPSEEK_BASE_URL",
+        "modelEnv": "DEEPSEEK_MODEL"
+      },
+      "access": {
+        "groupMembersEqual": true,
+        "scheduleAdminUserIdsEnv": "BOT_ADMIN_USER_IDS"
+      },
+      "queryConcurrency": 3
+    }
+  ]
+}
